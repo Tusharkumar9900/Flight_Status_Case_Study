@@ -1,0 +1,62 @@
+body {
+  background-color: #f0f8ff;
+}
+
+.App {
+  padding-top: 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+.title svg {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.MuiTableContainer-root {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: bold;
+  background-color: #1a237e;
+  color: white;
+}
+
+.status-on-time {
+  background-color: #e8f5e9;
+}
+
+.status-delayed {
+  background-color: #fff3e0;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-100%) translateY(0);
+  }
+  100% {
+    transform: translateX(100vw) translateY(-100vh);
+  }
+}
+
+.background-plane {
+  position: fixed;
+  bottom: -50px;
+  left: -100px;
+  font-size: 100px;
+  color: #bdbdbd;
+  opacity: 0.2;
+  z-index: -1;
+  animation: fly 30s linear infinite;
+}
